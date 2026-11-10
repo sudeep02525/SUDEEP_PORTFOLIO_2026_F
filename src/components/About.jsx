@@ -126,15 +126,15 @@ export default function About() {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    objectPosition: 'center top',
-                    borderRadius: '50%'
+                    objectPosition: 'center center',
+                    borderRadius: '50%',
+                    display: 'block'
                   }}
                   onError={(e) => {
-                    console.log('Image failed to load:', e.target.src);
-                    e.target.style.display = 'none';
+                    console.error('About image failed to load:', e.target.src);
                   }}
                   onLoad={() => {
-                    console.log('Image loaded successfully');
+                    console.log('About image loaded successfully');
                   }}
                 />
               </div>
@@ -241,15 +241,15 @@ export default function About() {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  objectPosition: 'center top',
-                  borderRadius: '50%'
+                  objectPosition: 'center center',
+                  borderRadius: '50%',
+                  display: 'block'
                 }}
                 onError={(e) => {
-                  console.log('Image failed to load:', e.target.src);
-                  e.target.style.display = 'none';
+                  console.error('About image failed to load:', e.target.src);
                 }}
                 onLoad={() => {
-                  console.log('Image loaded successfully');
+                  console.log('About image loaded successfully');
                 }}
               />
             </div>

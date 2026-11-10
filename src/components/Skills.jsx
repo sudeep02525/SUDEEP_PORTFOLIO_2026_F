@@ -67,19 +67,22 @@ export default function Skills() {
                        window.location.hostname === '127.0.0.1' || 
                        window.location.hostname.includes('localhost');
     
-    if (isLocalhost) {
-      // On localhost, always show 0
+    // By default on localhost keep visitor count at 0 to avoid inflating stats
+    const allowLocal = process.env.NEXT_PUBLIC_ENABLE_LOCAL_VISITORS === 'true';
+    if (isLocalhost && !allowLocal) {
       setVisitorCount(0);
       return;
     }
     
+    const apiBase = process.env.NEXT_PUBLIC_API_URL || '';
+
     try {
       // Check if this device/browser has already been counted
       const alreadyCounted = localStorage.getItem('visitor_counted') === 'true';
       
       if (alreadyCounted) {
         // Already counted - just fetch current count without incrementing
-        const response = await fetch('/api/visitors/count');
+        const response = await fetch(`${apiBase}/api/visitors/count`);
         const data = await response.json();
         
         if (data.success) {
@@ -87,7 +90,7 @@ export default function Skills() {
         }
       } else {
         // First time visitor - call API to increment count
-        const response = await fetch('/api/visitors');
+        const response = await fetch(`${apiBase}/api/visitors`);
         const data = await response.json();
         
         if (data.success) {
@@ -104,10 +107,22 @@ export default function Skills() {
 
   // Periodic update from server (every 30 seconds) - fetch only, no increment
   const startPeriodicUpdate = () => {
+    const isLocalhost = typeof window !== 'undefined' && (
+      window.location.hostname === 'localhost' || 
+      window.location.hostname === '127.0.0.1' || 
+      window.location.hostname.includes('localhost')
+    );
+    const allowLocal = process.env.NEXT_PUBLIC_ENABLE_LOCAL_VISITORS === 'true';
+    if (isLocalhost && !allowLocal) {
+      return () => {};
+    }
+
+    const apiBase = process.env.NEXT_PUBLIC_API_URL || '';
+
     const interval = setInterval(async () => {
       try {
         // Just fetch current count, don't increment
-        const response = await fetch('/api/visitors/count');
+        const response = await fetch(`${apiBase}/api/visitors/count`);
         const data = await response.json();
         
         if (data.success) {

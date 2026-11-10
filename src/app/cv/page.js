@@ -29,7 +29,7 @@ export default function CVPage() {
         {/* Left Sidebar */}
         <div className="cv-sidebar">
           <div className="cv-avatar">
-            <img src="/photo.png" alt="Sudeep Das" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'top center',borderRadius:'50%'}} />
+            <img src="/photo.png" alt="Sudeep Das" style={{width:'100%',height:'100%',objectFit:'cover',objectPosition:'center center',borderRadius:'50%',display:'block'}} />
           </div>
           <h1 className="cv-name">Sudeep Das</h1>
           <p className="cv-role">Frontend Developer<br/>& UI/UX Designer</p>
