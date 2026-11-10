@@ -65,8 +65,8 @@ export default function CVPage() {
               { name: 'CSS3', pct: 92 },
               { name: 'Figma', pct: 95 },
               { name: 'JavaScript', pct: 67 },
-              { name: 'React.js', pct: 52 },
-              { name: 'Next.js', pct: 52 },
+              { name: 'React.js', pct: 94 },
+              { name: 'Next.js', pct: 96 },
             ].map(s => (
               <div key={s.name} className="cv-skill-item">
                 <div className="cv-skill-label">
@@ -114,12 +114,12 @@ export default function CVPage() {
 
             {[
               {
-                name: 'Student Attendance Management System',
-                tech: 'Next.js · Express.js · MongoDB',
-                link: 'github.com/sudeep02525/student_attendance',
+                name: 'Petals by Smira (Client Project)',
+                tech: 'Next.js · React.js · Tailwind CSS · UI/UX Design',
+                link: 'petalsbysmira.in',
                 points: [
-                  'Full-stack attendance tracking with real-time updates and student management',
-                  'Secure REST APIs with Express.js and persistent MongoDB storage',
+                  'Luxury jewelry showcase and e-commerce web platform with premium dark-themed UI/UX design',
+                  'Built interactive product collections, responsive layouts, and seamless client inquiry experience',
                 ]
               },
               {
@@ -132,12 +132,12 @@ export default function CVPage() {
                 ]
               },
               {
-                name: 'Personal Portfolio Website',
-                tech: 'Next.js · React.js · Tailwind CSS · MongoDB',
-                link: 'github.com/sudeep02525/portfolio--sudeep00',
+                name: 'Sharda Academy Official (Client Project)',
+                tech: 'Next.js · React.js · Tailwind CSS · UI/UX Design',
+                link: 'shardaacademyofficial.in',
                 points: [
-                  'Fully responsive portfolio with smooth animations and modern dark UI',
-                  'MongoDB-based live visitor counter, deployed with custom domain',
+                  'Official educational portal for coaching institute featuring course catalog and admissions flow',
+                  'Modern responsive architecture with clean layout, quick inquiry integration, and optimized speed',
                 ]
               },
             ].map((p, i) => (

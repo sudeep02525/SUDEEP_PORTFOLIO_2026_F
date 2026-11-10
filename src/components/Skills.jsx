@@ -244,7 +244,7 @@ export default function Skills() {
           <ellipse cx="12" cy="12" rx="9" ry="3" fill="none" stroke="#61DAFB" strokeWidth="1.5" transform="rotate(-60 12 12)"/>
         </svg>
       ), 
-      level: '52%', 
+      level: '94%', 
       color: '#61DAFB',
       description: 'Components & state management'
     },
@@ -256,7 +256,7 @@ export default function Skills() {
           <path d="M7.5 6v12h2V9.5L15 18h1.5V6H15v8.5L9.5 6H7.5z" fill="#ffffff"/>
         </svg>
       ), 
-      level: '52%', 
+      level: '96%', 
       color: '#00D924',
       description: 'React framework & SSR'
     }

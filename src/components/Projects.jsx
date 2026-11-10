@@ -15,20 +15,22 @@ export default function Projects() {
         <h2 className="section-heading">Featured Projects</h2>
         <div className="projects-grid">
           <div className="project-card">
-            <div className="project-image" onClick={() => setPreviewImg('/Student Attendance.png')} style={{cursor:'pointer'}}>
-              <img src="/Student Attendance.png" alt="Student Attendance Preview" />
+            <div className="project-image" onClick={() => setPreviewImg('/PetalsBySmira.png')} style={{cursor:'pointer'}}>
+              <img src="/PetalsBySmira.png" alt="Petals by Smira Preview" />
               <div className="project-image-overlay"><i className="fas fa-expand"></i></div>
             </div>
             <div className="project-content">
-              <div className="project-title">Student Attendance</div>
-              <div className="project-description">A student attendance management system to track and manage daily attendance records efficiently. Features real-time updates, student management, and attendance reports.</div>
+              <div className="project-title">Petals by Smira</div>
+              <div className="project-description">A luxury jewelry showcase and e-commerce web platform built for Petals by Smira. Features an elegant dark aesthetic, curated premium collections, responsive catalog browsing, and an exclusive client inquiry experience.</div>
               <div className="project-tech-stack">
+                <span className="tech-tag">Client Project</span>
                 <span className="tech-tag">Next.js</span>
-                <span className="tech-tag">Express.js</span>
+                <span className="tech-tag">Tailwind CSS</span>
+                <span className="tech-tag">UI/UX</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/sudeep02525/student_attendance" className="project-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i> Source Code
+                <a href="https://petalsbysmira.in/" className="project-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-external-link-alt"></i> Live Website
                 </a>
               </div>
             </div>
@@ -55,21 +57,22 @@ export default function Projects() {
           </div>
 
           <div className="project-card">
-            <div className="project-image" onClick={() => setPreviewImg('/project3.png')} style={{cursor:'pointer'}}>
-              <img src="/project3.png" alt="Portfolio Website Preview" />
+            <div className="project-image" onClick={() => setPreviewImg('/ShardaAcademy.png')} style={{cursor:'pointer'}}>
+              <img src="/ShardaAcademy.png" alt="Sharda Academy Official Preview" />
               <div className="project-image-overlay"><i className="fas fa-expand"></i></div>
             </div>
             <div className="project-content">
-              <div className="project-title">Portfolio Website</div>
-              <div className="project-description">A personal portfolio website showcasing design and development skills with smooth animations and modern UI patterns. Built with Next.js and featuring interactive elements.</div>
+              <div className="project-title">Sharda Academy</div>
+              <div className="project-description">An official web portal built for Sharda Academy coaching institute. Features modern UI/UX design, comprehensive course structures for Classes 1–12, admissions management, and instant inquiry integration.</div>
               <div className="project-tech-stack">
-                <span className="tech-tag">React.js</span>
+                <span className="tech-tag">Client Project</span>
                 <span className="tech-tag">Next.js</span>
                 <span className="tech-tag">Tailwind CSS</span>
+                <span className="tech-tag">UI/UX</span>
               </div>
               <div className="project-links">
-                <a href="https://github.com/sudeep02525/portfolio--sudeep00.git" className="project-btn" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github"></i> Source Code
+                <a href="https://shardaacademyofficial.in/" className="project-btn" target="_blank" rel="noopener noreferrer">
+                  <i className="fas fa-external-link-alt"></i> Live Website
                 </a>
               </div>
             </div>
