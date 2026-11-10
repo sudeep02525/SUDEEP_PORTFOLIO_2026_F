@@ -100,9 +100,9 @@ export default function LearningJourney() {
               </p>
               <div className="card-progress">
                 <div className="progress-bar">
-                  <div className="progress-fill" style={{'--progress': '48%'}}></div>
+                  <div className="progress-fill" style={{'--progress': '65%'}}></div>
                 </div>
-                <span className="progress-text">48% Complete</span>
+                <span className="progress-text">65% Complete</span>
               </div>
             </div>
           </div>
@@ -247,9 +247,9 @@ export default function LearningJourney() {
               </p>
               <div className="card-progress">
                 <div className="progress-bar">
-                  <div className="progress-fill" style={{'--progress': '72%'}}></div>
+                  <div className="progress-fill" style={{'--progress': '91%'}}></div>
                 </div>
-                <span className="progress-text">72% Complete</span>
+                <span className="progress-text">91% Complete</span>
               </div>
             </div>
           </div>
@@ -309,9 +309,11 @@ export default function LearningJourney() {
                 Expanding to backend technologies, databases, and server-side development 
                 for complete end-to-end application architecture.
               </p>
-              <div className="card-status">
-                <div className="status-indicator upcoming"></div>
-                <span className="status-text">Upcoming Goal</span>
+              <div className="card-progress">
+                <div className="progress-bar">
+                  <div className="progress-fill" style={{'--progress': '95%'}}></div>
+                </div>
+                <span className="progress-text">95% Complete</span>
               </div>
             </div>
           </div>
@@ -420,11 +422,11 @@ export default function LearningJourney() {
                 Specializing in intelligent systems, data science models, 
                 and innovative AI-powered solutions for real-world challenges.
               </p>
-              <div className="card-future">
-                <div className="future-indicator">
-                  <div className="pulse-dot"></div>
-                  <span>Future Vision</span>
+              <div className="card-progress">
+                <div className="progress-bar">
+                  <div className="progress-fill" style={{'--progress': '10%'}}></div>
                 </div>
+                <span className="progress-text">10% Complete</span>
               </div>
             </div>
           </div>
