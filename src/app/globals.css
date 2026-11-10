@@ -3832,16 +3832,16 @@ body {
 
 .contact-title {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.25;
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 25%, #45B7D1 50%, #96CEB4 75%, #FFEAA7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 300% 300%;
-    animation: gradientShift 4s ease-in-out infinite;
+    color: var(--text-primary);
+}
+
+.title-lead {
+    color: #ffffff;
+    display: inline-block;
 }
 
 .title-highlight {
@@ -4439,7 +4439,8 @@ body {
     }
     
     .contact-title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+        line-height: 1.25;
     }
     
     .contact-subtitle {
@@ -4479,8 +4480,9 @@ body {
 
 @media (max-width: 480px) {
     .contact-title {
-        font-size: 1.8rem;
-        line-height: 1.2;
+        font-size: 1.75rem;
+        line-height: 1.35;
+        margin-bottom: 1rem;
     }
     
     .contact-subtitle {
@@ -5254,7 +5256,9 @@ body {
     }
 
     .contact-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.35;
+        margin-bottom: 1rem;
     }
 
     .contact-methods {

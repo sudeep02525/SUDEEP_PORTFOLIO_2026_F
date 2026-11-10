@@ -139,7 +139,8 @@ export default function Contact() {
             Let's Connect
           </div>
           <h1 className="contact-title">
-            Ready to <span className="title-highlight">Collaborate?</span>
+            <span className="title-lead">Ready to</span>{' '}
+            <span className="title-highlight">Collaborate?</span>
           </h1>
           <p className="contact-subtitle">
             I'm always excited to work on new projects and connect with fellow developers. 
